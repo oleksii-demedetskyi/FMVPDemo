@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DEDEE6241DA2F6B600988092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6231DA2F6B600988092 /* AppDelegate.swift */; };
-		DEDEE6261DA2F6B600988092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6251DA2F6B600988092 /* ViewController.swift */; };
 		DEDEE6291DA2F6B600988092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDEE6271DA2F6B600988092 /* Main.storyboard */; };
 		DEDEE62B1DA2F6B600988092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDEE62A1DA2F6B600988092 /* Assets.xcassets */; };
-		DEDEE62E1DA2F6B600988092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEDEE62C1DA2F6B600988092 /* LaunchScreen.storyboard */; };
 		DEDEE6391DA2F6B600988092 /* FMVPDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6381DA2F6B600988092 /* FMVPDemoTests.swift */; };
+		DEDEE6441DA2FA1C00988092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6431DA2FA1C00988092 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +27,13 @@
 /* Begin PBXFileReference section */
 		DEDEE6201DA2F6B600988092 /* FMVPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMVPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDEE6231DA2F6B600988092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DEDEE6251DA2F6B600988092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEDEE6281DA2F6B600988092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DEDEE62A1DA2F6B600988092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DEDEE62D1DA2F6B600988092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEDEE62F1DA2F6B600988092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDEE6341DA2F6B600988092 /* FMVPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMVPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDEE6381DA2F6B600988092 /* FMVPDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMVPDemoTests.swift; sourceTree = "<group>"; };
 		DEDEE63A1DA2F6B600988092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEDEE6431DA2FA1C00988092 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				DEDEE6231DA2F6B600988092 /* AppDelegate.swift */,
-				DEDEE6251DA2F6B600988092 /* ViewController.swift */,
 				DEDEE6271DA2F6B600988092 /* Main.storyboard */,
 				DEDEE62A1DA2F6B600988092 /* Assets.xcassets */,
-				DEDEE62C1DA2F6B600988092 /* LaunchScreen.storyboard */,
 				DEDEE62F1DA2F6B600988092 /* Info.plist */,
+				DEDEE6431DA2FA1C00988092 /* LoginViewController.swift */,
 			);
 			path = FMVPDemo;
 			sourceTree = "<group>";
@@ -181,7 +178,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDEE62E1DA2F6B600988092 /* LaunchScreen.storyboard in Resources */,
 				DEDEE62B1DA2F6B600988092 /* Assets.xcassets in Resources */,
 				DEDEE6291DA2F6B600988092 /* Main.storyboard in Resources */,
 			);
@@ -201,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEDEE6261DA2F6B600988092 /* ViewController.swift in Sources */,
+				DEDEE6441DA2FA1C00988092 /* LoginViewController.swift in Sources */,
 				DEDEE6241DA2F6B600988092 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,14 +227,6 @@
 				DEDEE6281DA2F6B600988092 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DEDEE62C1DA2F6B600988092 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DEDEE62D1DA2F6B600988092 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
