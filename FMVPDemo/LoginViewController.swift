@@ -14,7 +14,7 @@ final class LoginViewController: UIViewController {
     @IBOutlet private var loginButton: UIButton!
     @IBOutlet private var activityIndicator: UIActivityIndicatorView!
     
-    @IBAction func login() {
+    @IBAction private func login() {
         let username = usernameField.text
         let password = passwordField.text
         

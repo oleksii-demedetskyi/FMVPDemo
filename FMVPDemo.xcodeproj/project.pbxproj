@@ -12,6 +12,7 @@
 		DEDEE62B1DA2F6B600988092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDEE62A1DA2F6B600988092 /* Assets.xcassets */; };
 		DEDEE6391DA2F6B600988092 /* FMVPDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6381DA2F6B600988092 /* FMVPDemoTests.swift */; };
 		DEDEE6441DA2FA1C00988092 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6431DA2FA1C00988092 /* LoginViewController.swift */; };
+		DEDEE6461DA31FC700988092 /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6451DA31FC700988092 /* TimersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		DEDEE6381DA2F6B600988092 /* FMVPDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMVPDemoTests.swift; sourceTree = "<group>"; };
 		DEDEE63A1DA2F6B600988092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDEE6431DA2FA1C00988092 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DEDEE6451DA31FC700988092 /* TimersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				DEDEE62A1DA2F6B600988092 /* Assets.xcassets */,
 				DEDEE62F1DA2F6B600988092 /* Info.plist */,
 				DEDEE6431DA2FA1C00988092 /* LoginViewController.swift */,
+				DEDEE6451DA31FC700988092 /* TimersViewController.swift */,
 			);
 			path = FMVPDemo;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEDEE6461DA31FC700988092 /* TimersViewController.swift in Sources */,
 				DEDEE6441DA2FA1C00988092 /* LoginViewController.swift in Sources */,
 				DEDEE6241DA2F6B600988092 /* AppDelegate.swift in Sources */,
 			);
