@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let bundle = Bundle(identifier: "dalog.FVMP-UI")
+        let storyboard = UIStoryboard(name: "Main", bundle: bundle)
+        let vc = storyboard.instantiateInitialViewController()
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = vc
+        
+        self.window = window
+        
+        window.makeKeyAndVisible()
+        
         return true
     }
 
