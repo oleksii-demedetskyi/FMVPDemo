@@ -26,7 +26,7 @@ final class TimersViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         link = CADisplayLink(target: self, selector: #selector(updateTimers))
-        link?.preferredFramesPerSecond = 60
+        link?.preferredFramesPerSecond = 30
         link?.add(to: .current, forMode: .commonModes)
     }
     
@@ -36,27 +36,17 @@ final class TimersViewController: UITableViewController {
     }
     
     @objc private func updateTimers() {
-        let calender = NSCalendar.autoupdatingCurrent
-        for cell in tableView.visibleCells {
-            guard let cell = cell as? TimerViewCell else { fatalError() }
-            
-            let components = calender.dateComponents(
-                [Calendar.Component.second, .nanosecond],
-                from: timers[tableView.indexPath(for: cell)!.row],
-                to: Date())
-            guard let seconds = components.second,
-                let nanosec = components.nanosecond else { fatalError() }
-            
-            cell.label.text =
-                String(format: "%02d", seconds)
-                + ":" +
-                String(format: "%03d", .init(nanosec) / NSEC_PER_MSEC)
+        props.update()
+        for case let cell as TimerViewCell in tableView.visibleCells {
+            guard let index = tableView.indexPath(for: cell) else { fatalError() }
+            cell.label.text = props.timers[index.row].value
         }
     }
     
-    private var timers = [] as [Date]
+    var props: Props = Props.empty()
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return timers.count
+        return props.timers.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,8 +59,8 @@ final class TimersViewController: UITableViewController {
     
     @IBAction private func addTimer() {
         tableView.beginUpdates()
-        tableView.insertRows(at: [.init(row: timers.count, section: 0)], with: .automatic)
-        timers.append(Date())
+        tableView.insertRows(at: [.init(row: props.timers.count, section: 0)], with: .automatic)
+        props.addTimer()
         tableView.endUpdates()
     }
     
@@ -81,7 +71,24 @@ final class TimersViewController: UITableViewController {
     {
         tableView.beginUpdates()
         tableView.deleteRows(at: [indexPath], with: .automatic)
-        timers.remove(at: indexPath.row)
+        props.timers[indexPath.row].delete()
         tableView.endUpdates()
+    }
+}
+
+extension TimersViewController {
+    struct Props {
+        struct Timer {
+            let value: String
+            let delete: () -> ()
+        }
+        
+        let timers: [Timer]
+        let addTimer: () -> ()
+        let update: () -> ()
+        
+        static func empty() -> Props {
+            return Props(timers: [], addTimer: {}, update: {})
+        }
     }
 }
