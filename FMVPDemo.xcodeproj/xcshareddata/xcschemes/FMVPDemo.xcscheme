@@ -38,6 +38,16 @@
                ReferencedContainer = "container:FMVPDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DE36D8031DA75ECC00C22B6D"
+               BuildableName = "FMVP_CoreTests.xctest"
+               BlueprintName = "FMVP_CoreTests"
+               ReferencedContainer = "container:FMVPDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

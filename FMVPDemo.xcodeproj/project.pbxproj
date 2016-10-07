@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE36D8051DA75ECC00C22B6D /* FMVP_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36D7FC1DA75ECC00C22B6D /* FMVP_Core.framework */; };
+		DE36D80C1DA75ECC00C22B6D /* FMVP_CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE36D80B1DA75ECC00C22B6D /* FMVP_CoreTests.swift */; };
+		DE36D80E1DA75ECC00C22B6D /* FMVP_Core.h in Headers */ = {isa = PBXBuildFile; fileRef = DE36D7FE1DA75ECC00C22B6D /* FMVP_Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE36D8111DA75ECC00C22B6D /* FMVP_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE36D7FC1DA75ECC00C22B6D /* FMVP_Core.framework */; };
+		DE36D8121DA75ECC00C22B6D /* FMVP_Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DE36D7FC1DA75ECC00C22B6D /* FMVP_Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DECDB0711DA75EF60027A243 /* TimersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE36D7F51DA75D5300C22B6D /* TimersModel.swift */; };
 		DEDEE6241DA2F6B600988092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6231DA2F6B600988092 /* AppDelegate.swift */; };
 		DEDEE62B1DA2F6B600988092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEDEE62A1DA2F6B600988092 /* Assets.xcassets */; };
 		DEDEE6391DA2F6B600988092 /* FMVPDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEDEE6381DA2F6B600988092 /* FMVPDemoTests.swift */; };
@@ -19,6 +25,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		DE36D8061DA75ECC00C22B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEDEE6181DA2F6B500988092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE36D7FB1DA75ECC00C22B6D;
+			remoteInfo = FMVP_Core;
+		};
+		DE36D8081DA75ECC00C22B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEDEE6181DA2F6B500988092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEDEE61F1DA2F6B500988092;
+			remoteInfo = FMVPDemo;
+		};
+		DE36D80F1DA75ECC00C22B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEDEE6181DA2F6B500988092 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE36D7FB1DA75ECC00C22B6D;
+			remoteInfo = FMVP_Core;
+		};
 		DEDEE6351DA2F6B600988092 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DEDEE6181DA2F6B500988092 /* Project object */;
@@ -42,6 +69,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DE36D8121DA75ECC00C22B6D /* FMVP_Core.framework in Embed Frameworks */,
 				DEEB86931DA713800057CCEE /* FVMP_UI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -50,6 +78,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE36D7F51DA75D5300C22B6D /* TimersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimersModel.swift; path = ../FMVPDemo/TimersModel.swift; sourceTree = "<group>"; };
+		DE36D7FC1DA75ECC00C22B6D /* FMVP_Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMVP_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE36D7FE1DA75ECC00C22B6D /* FMVP_Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMVP_Core.h; sourceTree = "<group>"; };
+		DE36D7FF1DA75ECC00C22B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE36D8041DA75ECC00C22B6D /* FMVP_CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMVP_CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE36D80B1DA75ECC00C22B6D /* FMVP_CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMVP_CoreTests.swift; sourceTree = "<group>"; };
+		DE36D80D1DA75ECC00C22B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEDEE6201DA2F6B600988092 /* FMVPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMVPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEDEE6231DA2F6B600988092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEDEE6281DA2F6B600988092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,14 +98,30 @@
 		DEEB868B1DA713800057CCEE /* FVMP_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FVMP_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEB868D1DA713800057CCEE /* FVMP UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FVMP UI.h"; sourceTree = "<group>"; };
 		DEEB868E1DA713800057CCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEEB869B1DA71DB00057CCEE /* TimersViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimersViewController.playground; sourceTree = "<group>"; };
+		DEEB869B1DA71DB00057CCEE /* TimersViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = TimersViewController.playground; path = "../FVMP UI/TimersViewController.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DE36D7F81DA75ECC00C22B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE36D8011DA75ECC00C22B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE36D8051DA75ECC00C22B6D /* FMVP_Core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEDEE61D1DA2F6B500988092 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE36D8111DA75ECC00C22B6D /* FMVP_Core.framework in Frameworks */,
 				DEEB86921DA713800057CCEE /* FVMP_UI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,12 +143,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE36D7FD1DA75ECC00C22B6D /* FMVP_Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE36D7F51DA75D5300C22B6D /* TimersModel.swift */,
+				DE36D7FE1DA75ECC00C22B6D /* FMVP_Core.h */,
+				DE36D7FF1DA75ECC00C22B6D /* Info.plist */,
+			);
+			path = FMVP_Core;
+			sourceTree = "<group>";
+		};
+		DE36D80A1DA75ECC00C22B6D /* FMVP_CoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE36D80B1DA75ECC00C22B6D /* FMVP_CoreTests.swift */,
+				DE36D80D1DA75ECC00C22B6D /* Info.plist */,
+			);
+			path = FMVP_CoreTests;
+			sourceTree = "<group>";
+		};
 		DEDEE6171DA2F6B500988092 = {
 			isa = PBXGroup;
 			children = (
 				DEDEE6221DA2F6B600988092 /* FMVPDemo */,
 				DEDEE6371DA2F6B600988092 /* FMVPDemoTests */,
 				DEEB868C1DA713800057CCEE /* FVMP UI */,
+				DE36D7FD1DA75ECC00C22B6D /* FMVP_Core */,
+				DE36D80A1DA75ECC00C22B6D /* FMVP_CoreTests */,
 				DEDEE6211DA2F6B600988092 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +180,8 @@
 				DEDEE6201DA2F6B600988092 /* FMVPDemo.app */,
 				DEDEE6341DA2F6B600988092 /* FMVPDemoTests.xctest */,
 				DEEB868B1DA713800057CCEE /* FVMP_UI.framework */,
+				DE36D7FC1DA75ECC00C22B6D /* FMVP_Core.framework */,
+				DE36D8041DA75ECC00C22B6D /* FMVP_CoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +192,7 @@
 				DEDEE6231DA2F6B600988092 /* AppDelegate.swift */,
 				DEDEE62A1DA2F6B600988092 /* Assets.xcassets */,
 				DEDEE62F1DA2F6B600988092 /* Info.plist */,
+				DEEB869B1DA71DB00057CCEE /* TimersViewController.playground */,
 			);
 			path = FMVPDemo;
 			sourceTree = "<group>";
@@ -139,7 +214,6 @@
 				DEDEE6271DA2F6B600988092 /* Main.storyboard */,
 				DEEB868D1DA713800057CCEE /* FVMP UI.h */,
 				DEEB868E1DA713800057CCEE /* Info.plist */,
-				DEEB869B1DA71DB00057CCEE /* TimersViewController.playground */,
 			);
 			path = "FVMP UI";
 			sourceTree = "<group>";
@@ -147,6 +221,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		DE36D7F91DA75ECC00C22B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE36D80E1DA75ECC00C22B6D /* FMVP_Core.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEEB86881DA713800057CCEE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +240,43 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		DE36D7FB1DA75ECC00C22B6D /* FMVP_Core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE36D8131DA75ECC00C22B6D /* Build configuration list for PBXNativeTarget "FMVP_Core" */;
+			buildPhases = (
+				DE36D7F71DA75ECC00C22B6D /* Sources */,
+				DE36D7F81DA75ECC00C22B6D /* Frameworks */,
+				DE36D7F91DA75ECC00C22B6D /* Headers */,
+				DE36D7FA1DA75ECC00C22B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMVP_Core;
+			productName = FMVP_Core;
+			productReference = DE36D7FC1DA75ECC00C22B6D /* FMVP_Core.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DE36D8031DA75ECC00C22B6D /* FMVP_CoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE36D8161DA75ECC00C22B6D /* Build configuration list for PBXNativeTarget "FMVP_CoreTests" */;
+			buildPhases = (
+				DE36D8001DA75ECC00C22B6D /* Sources */,
+				DE36D8011DA75ECC00C22B6D /* Frameworks */,
+				DE36D8021DA75ECC00C22B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE36D8071DA75ECC00C22B6D /* PBXTargetDependency */,
+				DE36D8091DA75ECC00C22B6D /* PBXTargetDependency */,
+			);
+			name = FMVP_CoreTests;
+			productName = FMVP_CoreTests;
+			productReference = DE36D8041DA75ECC00C22B6D /* FMVP_CoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DEDEE61F1DA2F6B500988092 /* FMVPDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DEDEE63D1DA2F6B600988092 /* Build configuration list for PBXNativeTarget "FMVPDemo" */;
@@ -171,6 +290,7 @@
 			);
 			dependencies = (
 				DEEB86911DA713800057CCEE /* PBXTargetDependency */,
+				DE36D8101DA75ECC00C22B6D /* PBXTargetDependency */,
 			);
 			name = FMVPDemo;
 			productName = FMVPDemo;
@@ -223,6 +343,17 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = dalog;
 				TargetAttributes = {
+					DE36D7FB1DA75ECC00C22B6D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PXX8NZKYVV;
+						ProvisioningStyle = Automatic;
+					};
+					DE36D8031DA75ECC00C22B6D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PXX8NZKYVV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DEDEE61F1DA2F6B500988092;
+					};
 					DEDEE61F1DA2F6B500988092 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = PXX8NZKYVV;
@@ -257,11 +388,27 @@
 				DEDEE61F1DA2F6B500988092 /* FMVPDemo */,
 				DEDEE6331DA2F6B600988092 /* FMVPDemoTests */,
 				DEEB868A1DA713800057CCEE /* FVMP_UI */,
+				DE36D7FB1DA75ECC00C22B6D /* FMVP_Core */,
+				DE36D8031DA75ECC00C22B6D /* FMVP_CoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DE36D7FA1DA75ECC00C22B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE36D8021DA75ECC00C22B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEDEE61E1DA2F6B500988092 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +435,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DE36D7F71DA75ECC00C22B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DECDB0711DA75EF60027A243 /* TimersModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE36D8001DA75ECC00C22B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE36D80C1DA75ECC00C22B6D /* FMVP_CoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DEDEE61C1DA2F6B500988092 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +479,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		DE36D8071DA75ECC00C22B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE36D7FB1DA75ECC00C22B6D /* FMVP_Core */;
+			targetProxy = DE36D8061DA75ECC00C22B6D /* PBXContainerItemProxy */;
+		};
+		DE36D8091DA75ECC00C22B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEDEE61F1DA2F6B500988092 /* FMVPDemo */;
+			targetProxy = DE36D8081DA75ECC00C22B6D /* PBXContainerItemProxy */;
+		};
+		DE36D8101DA75ECC00C22B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE36D7FB1DA75ECC00C22B6D /* FMVP_Core */;
+			targetProxy = DE36D80F1DA75ECC00C22B6D /* PBXContainerItemProxy */;
+		};
 		DEDEE6361DA2F6B600988092 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DEDEE61F1DA2F6B500988092 /* FMVPDemo */;
@@ -341,6 +519,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DE36D8141DA75ECC00C22B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PXX8NZKYVV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FMVP_Core/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dalog.FMVP-Core";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DE36D8151DA75ECC00C22B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PXX8NZKYVV;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FMVP_Core/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dalog.FMVP-Core";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DE36D8171DA75ECC00C22B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PXX8NZKYVV;
+				INFOPLIST_FILE = FMVP_CoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dalog.FMVP-CoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMVPDemo.app/FMVPDemo";
+			};
+			name = Debug;
+		};
+		DE36D8181DA75ECC00C22B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = PXX8NZKYVV;
+				INFOPLIST_FILE = FMVP_CoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "dalog.FMVP-CoreTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMVPDemo.app/FMVPDemo";
+			};
+			name = Release;
+		};
 		DEDEE63B1DA2F6B600988092 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -539,6 +791,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DE36D8131DA75ECC00C22B6D /* Build configuration list for PBXNativeTarget "FMVP_Core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE36D8141DA75ECC00C22B6D /* Debug */,
+				DE36D8151DA75ECC00C22B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE36D8161DA75ECC00C22B6D /* Build configuration list for PBXNativeTarget "FMVP_CoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE36D8171DA75ECC00C22B6D /* Debug */,
+				DE36D8181DA75ECC00C22B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DEDEE61B1DA2F6B500988092 /* Build configuration list for PBXProject "FMVPDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -573,6 +843,7 @@
 				DEEB86951DA713800057CCEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

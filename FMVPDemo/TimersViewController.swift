@@ -19,10 +19,39 @@ final class TimerViewCell: UITableViewCell {
     }
 }
 
-final class TimersViewController: UITableViewController {
+final public class TimersViewController: UITableViewController {
+    public struct Props {
+        public static let new = Props.init
+        
+        public struct Timer {
+            public let value: String
+            public let delete: () -> ()
+            
+            public init(value: String, delete: @escaping () -> ()) {
+                self.value = value
+                self.delete = delete
+            }
+        }
+        
+        public let timers: [Timer]
+        public let addTimer: () -> ()
+        public let update: () -> ()
+        
+        public init(timers: [Timer],
+                    addTimer: @escaping () -> (),
+                    update: @escaping () -> ()) {
+            self.timers = timers
+            self.addTimer = addTimer
+            self.update = update
+        }
+        
+        static func empty() -> Props {
+            return Props(timers: [], addTimer: {}, update: {})
+        }
+    }
     
     private var link: CADisplayLink?
-    override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         link = CADisplayLink(target: self, selector: #selector(updateTimers))
@@ -30,7 +59,7 @@ final class TimersViewController: UITableViewController {
         link?.add(to: .current, forMode: .commonModes)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         link?.remove(from: .current, forMode: .commonModes)
         link = nil
     }
@@ -43,13 +72,13 @@ final class TimersViewController: UITableViewController {
         }
     }
     
-    var props: Props = Props.empty()
+    public var props: Props = Props.empty()
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return props.timers.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "timer") else {
             fatalError("Incorrect cell id")
         }
@@ -64,7 +93,7 @@ final class TimersViewController: UITableViewController {
         tableView.endUpdates()
     }
     
-    override func tableView(
+    override public func tableView(
         _ tableView: UITableView,
         commit editingStyle: UITableViewCellEditingStyle,
         forRowAt indexPath: IndexPath)
@@ -73,22 +102,5 @@ final class TimersViewController: UITableViewController {
         tableView.deleteRows(at: [indexPath], with: .automatic)
         props.timers[indexPath.row].delete()
         tableView.endUpdates()
-    }
-}
-
-extension TimersViewController {
-    struct Props {
-        struct Timer {
-            let value: String
-            let delete: () -> ()
-        }
-        
-        let timers: [Timer]
-        let addTimer: () -> ()
-        let update: () -> ()
-        
-        static func empty() -> Props {
-            return Props(timers: [], addTimer: {}, update: {})
-        }
     }
 }
