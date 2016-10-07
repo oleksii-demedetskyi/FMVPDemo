@@ -63,6 +63,7 @@
 		DEEB868B1DA713800057CCEE /* FVMP_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FVMP_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEB868D1DA713800057CCEE /* FVMP UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FVMP UI.h"; sourceTree = "<group>"; };
 		DEEB868E1DA713800057CCEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEEB869B1DA71DB00057CCEE /* TimersViewController.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TimersViewController.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +139,7 @@
 				DEDEE6271DA2F6B600988092 /* Main.storyboard */,
 				DEEB868D1DA713800057CCEE /* FVMP UI.h */,
 				DEEB868E1DA713800057CCEE /* Info.plist */,
+				DEEB869B1DA71DB00057CCEE /* TimersViewController.playground */,
 			);
 			path = "FVMP UI";
 			sourceTree = "<group>";
